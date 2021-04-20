@@ -1,4 +1,5 @@
-$font-stack: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+$font-stack: -apple-system, BlinkMacSystemFont, Roboto, Poppins, Fontawesome, "Open Sans", "Helvetica Neue", sans-serif;
+
 
 @import "~bootstrap/scss/bootstrap";
 
@@ -8,6 +9,26 @@ $font-stack: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica 
   font-weight: 400;
   src: url(../fonts/Roboto-Regular.ttf);
 }
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Fontawesome";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/fontawesome-webfont.ttf);
+}
+
+
+
+
+
+
 
 body {
   font-family: $font-stack;
@@ -20,3 +41,84 @@ body {
     }
   }
 }
+
+
+.section-header {
+  padding: 10px 0 10px 0;
+  background-color: #b90000;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.topmenu > li {
+  display: inline-block;
+  margin-right: 0;
+  position: relative;
+}
+
+.topmenu a, .center a {
+  display: block;
+  padding: 5px 25px;
+  text-decoration: none;
+  outline: none;
+  transition: .5s linear;
+  font-family: Poppins;
+  font-size: 14px;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.submenu a:hover, .topmenu a:hover, .center a:hover {
+  color: yellow;
+}
+.center {
+  position: relative;
+}
+.center a::before {
+  content: "\f095";
+  font-family: Fontawesome;
+  margin-left: -15px;
+  position: absolute;
+}
+.down::after {
+  content: "\f107";
+  font-family: Fontawesome;
+  margin-left: 8px;
+}
+.one ul {
+  background: #b90000;
+}
+.one ul a {
+  color: #fff;
+}
+.one .submenu {
+  display: none;
+}
+.one ul li:hover .submenu {
+  display: block;
+}
+.center a {
+  color: #fff;
+}
+.nav-item {
+  padding: 10px 10px;
+}
+
+
+
+
+
+@import "media";

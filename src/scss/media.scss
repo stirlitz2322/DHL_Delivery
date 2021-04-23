@@ -5,15 +5,20 @@
 @media only screen and (max-width : 1200px){
 
 }
-	/**/
+	.grid a {
+		padding: 47.5px 15px;
+	}
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px){
 
 }
-	/**/
-
+ .main-menu-item {
+	 display: grid;
+	 grid-template-columns: repeat (4, 1fr);
+	 grid-template-rows: repeat (2. 1fr 1fr);
+ }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px){

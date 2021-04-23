@@ -2,31 +2,8 @@ $font-stack: -apple-system, BlinkMacSystemFont, Roboto, Poppins, Fontawesome, "O
 
 
 @import "~bootstrap/scss/bootstrap";
-
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/Roboto-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/Poppins-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Fontawesome";
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/fontawesome-webfont.ttf);
-}
-
-
-
-
+@import "vars";
+@import "fonts";
 
 
 
@@ -45,7 +22,7 @@ body {
 
 .section-header {
   padding: 10px 0 10px 0;
-  background-color: #b90000;
+  background-color: $red;
   width: 100%;
 }
 
@@ -99,7 +76,7 @@ ul {
   margin-left: 8px;
 }
 .one ul {
-  background: #b90000;
+  background: $red;
 }
 .one ul a {
   color: #fff;
@@ -118,7 +95,6 @@ ul {
 }
 .main-menu {
   background-color: #ffcb00;
-  padding: 30px 0;
 }
 .logo {
   background-repeat: no-repeat;
@@ -129,21 +105,58 @@ ul {
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  background-color: aqua;
+  border-left-color: #fff;
+  justify-items: center;
+  align-items: center;
+}
+.grid a{
+  padding: 47.5px $gutter;
+  color: $red;
+  text-decoration: none;
+  text-transform: uppercase;
+  
 
 }
-.grid:nth-child(1) {
+.main-menu-item {
+  display: grid;
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  font-family: Poppins;
+  font-size: 14px;
+  
+}
+.uppercase {
+  border-bottom: 4px solid $red;
+  font-weight: bold;
+}
+.search {
+  background-color: $red;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.search::after {
+  content: "\f002";
+  font-family: "Fontawesome";
+  color: #fff;
+  font-size: 14px;
+  padding-top: 15px;
+}
+
+.main-menu-item:nth-child(1) {
   grid-column: 1 / 3;
 }
-.grid:nth-child(3) {
+.main-menu-item:nth-child(3) {
   grid-column: 4 / 6;
 }
-.grid:nth-child(8) {
+.main-menu-item:nth-child(8) {
   grid-column: 11 / 13;
 }
-.main-menu-item {
-  white-space: nowrap;
-}
+
 
 
 @import "media";

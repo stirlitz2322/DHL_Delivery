@@ -4,7 +4,23 @@
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
-
+<div class="section-preloader" style="background-image: url(../../img/preloader.svg);">
+  <div class="container">
+    <div class="row">
+      <h1 class="h1">We Deliver<br>With Speed</h1>
+      <div class="yellow-line"></div>
+      <h3 class="h3">When an unknown printer took a galley of type and scrambled<br>
+        it to make a type specimen book. It has survived not only five centuries</h3>
+        <p class="odds">Amazing<span class="yellow-point">&emsp;.&emsp;</span>Quick<span class="yellow-point">&emsp;.&emsp;</span>4/7 Supports</p>
+        <nav>
+          <ul>
+            <li><a href="" class="yellow-button">Learn more</a></li>
+            <li><a href="">DHL worldwide</a></li>
+          </ul>
+        </nav>
+    </div>
+  </div>
+</div>
 
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>

@@ -38,12 +38,38 @@
 	  .search {
 		  grid-row: 1 / 3;
 	  }
+	  .section-preloader {
+		height: 610px;
+	  }
+	  .section-preloader h1 {
+		  margin-bottom: 30px;
+		  margin-top: 60px;
+	  }
 }
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px){
 	.topmenu, .center {
+		text-align: center;
+	}
+	.section-preloader {
+		height: 490px;
+	}
+	.section-preloader h1 {
+		font-size: 44px;
+		text-align: center;
+	}
+	.yellow-line {
+		display: none;
+	}
+	.section-preloader h3 {
+		margin-bottom: 26px;
+		margin-top: 0;
+		font-size: 16px;
+	
+	}
+	.ossd {
 		text-align: center;
 	}
 
@@ -62,6 +88,12 @@
 	  .grid a {
 		padding: 4.5px 0;
 	}
+	.section-preloader h1 {
+		font-size: 40px;
+	}
+	.section-preloader h3 {
+		text-align: center;
+	}
 	.search {
 		display: block;
 		position: relative;
@@ -69,6 +101,7 @@
 		height: 24px;
 		width: 90px;
 		margin-left: 38%;
+		display: none;
 	  }
 	.search::before {
 		display: none;
@@ -81,7 +114,27 @@
 		font-size: 14px;
 		padding-top: 10px;
 		padding-left: 5px;
-	  }	
+	  }
+	.button-case {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		justify-items: center;
+		align-items: center;
+	}
+	.button-case li{
+		margin-bottom: 0px;
+	}
+	.button-case li:first-child {
+		margin-bottom: 20px;
+	}
+	.yellow-button {
+		margin-right: 0;
+	}
+	.section-preloader .odds {
+		font-size: 15px;
+		text-align: center;
+	}
 }	
 	/**/
 

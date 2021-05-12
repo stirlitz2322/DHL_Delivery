@@ -161,6 +161,21 @@ ul {
 .section-preloader {
   width: 100%;
   height: 800px;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+.section-preloader:after {
+	content: "";
+	display: block;    
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;      
+	left: 0;   
+	background: transparent;
+  background-image: linear-gradient(45deg, #b90000 0%, rgba(255,203,0,0) 99%);
+	opacity: 0.8;
 }
 .section-preloader h1 {
   font-size: 70px;
@@ -170,18 +185,22 @@ ul {
   margin-top: 178px;
   font-weight: bold;
   margin-bottom: 60px;
+  z-index: 1;
 }
 .yellow-line {
   width: 100px;
   height: 4px;
   background: $yellow;
   margin-left: 12px;
+  z-index: 1;
 }
 .section-preloader h3 {
   font-size: 20px;
   font-family: Poppins;
   color: $yellow;
   margin-top: 43px;
+  margin-bottom: 48px;
+  z-index: 1;
 }
 .section-preloader .odds {
   font-size: 20px;
@@ -189,48 +208,151 @@ ul {
   color: #fff;
   text-transform: uppercase;
   font-family: Poppins;
+  margin-bottom: 42px;
+  z-index: 1;
+}
+.odds .nowrap {
+  white-space: nowrap;
+}
+.section-preloader nav {
+  z-index: 1;
 }
 .section-preloader ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  z-index: 1;
 }
 .section-preloader li {
   display: inline;
+  z-index: 1;
 }
 .section-preloader a {
   text-decoration: none;
   text-transform: uppercase;
+  z-index: 1;
 }
 .yellow-button {
   color: $red;
   font-weight: bold;
   font-family: Poppins;
   border-radius: 50px;
-  border: 1px solid $yellow;
   background-color: $yellow;
-  padding: 5px 15px;
-  // display: inline-block;
-	// border: none;
-	// color: #fff;
-	// text-decoration: none;
-	// background-color: $yellow;
-	// padding: 15px 45px;
-	// font-size: 16px;
-	// text-transform: uppercase;
-	// font-weight: 600;
-	// letter-spacing: 3px;
-	// border-radius: 2px;
-	// text-align: center;
-	// position: relative;
-	// outline: none;
-	// transition: background-color .1s ease;
+  padding: 15.5px 39px;
+  text-align: center;
+  font-size: 12px;
+  background-color: $yellow;
+  margin-right: 20px;
+  z-index: 1;
 
+}
+.white-button {
+  color: $white;
+  font-weight: bold;
+  font-family: Poppins;
+  border-radius: 50px;
+  border: $white 1px solid;
+  padding: 13.5px 25px;
+  text-align: center;
+  font-size: 12px;
+  z-index: 1;
 }
 .yellow-point {
   color: $yellow;
   font-size: 30px;
 
+}
+.button-case .yellow-button:hover {
+  color:$white;
+}
+.button-case .white-button:hover {
+  color:$red;
+}
+.section-services h2 {
+  font-size: 50px;
+  color: $red;
+  font-family: Poppins;
+  font-weight: 600;
+  padding: 130px 0 115px 0;
+  letter-spacing: 2px;
+  line-height: 80px;
+  background-repeat: no-repeat;
+  background-position: left;
+
+}
+.section-services h3 {
+  font-family: Poppins;
+  font-size: 20px;
+  color: $red;
+  margin: 0;
+  padding: 16px 0 13px 0;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.section-services p {
+  font-family: Poppins;
+  font-size: 16px;
+  color: #777;
+  font-weight: 400;
+  line-height: 26px;
+}
+.section-services .more {
+  font-family: Poppins;
+  color: #222;
+  font-weight: bold;
+}
+.services-home {
+  display: grid;
+  grid-gap: $gutter;
+  grid-template-columns: repeat(4, 1fr);
+}
+.services-item {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  text-decoration: none;
+  overflow: hidden;
+
+}
+.services-item-img {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+.more::after {
+  content: "\f0da";
+  font-family: Fontawesome;
+  color: $red;
+}
+.input-item {
+  background-color: $red;
+  text-decoration: none;
+  display: grid;
+}
+.inputcase {
+  margin-left: 32px;
+}
+.input-item h4 {
+  font-family: Poppins;
+  color: $white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 80px;
+  font-weight: 600;
+}
+.yellow-line-center {
+  width: 70px;
+  height: 2px;
+  background: $yellow;
+  margin: 30px 0;
+}
+.input-item p {
+  color: $white;
+  font-family: Poppins;
+  font-size: 16px;
+}
+.location option {
+  color: red
 }
 
 

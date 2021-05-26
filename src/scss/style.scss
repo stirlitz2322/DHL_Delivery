@@ -346,20 +346,6 @@ ul {
   background: $yellow;
   margin: 30px 0;
 }
-.select {
-  background-color: #0ee;
-  border-radius: 10px;
-  padding: 10px 0;
-  width: 200px;
-}
-.select p {
-  cursor: pointer;
-  margin: 0;
-  padding: 5px 20px;
-}
-.select p.active {
-  background-color: #ee0;
-}
 
 
 .section-more {
@@ -450,11 +436,15 @@ ul {
   background-color: #ffffff;
   padding-left: 35px;
 }
-.text-list h3{
+.section-more-text {
+  display: grid;
+}
+.section-more-text h3{
   font-size: 20px;
-  letter-spacing: 1px;
+  // letter-spacing: 1px;
   line-height: 24px;
   color: $red;
+  text-transform: none;
   font-family: "Poppins";
   
 }
@@ -470,6 +460,47 @@ ul {
   font-size: 20px;
   margin-right: 5px;
 }
+.select::after {
+  padding: 13px;
+  background-color: $yellow;
+  content: "\f078";
+  // display: block;
+  font-family: Fontawesome;
+  color: $red;
+  position: absolute;
+  margin-left: -42px;
+  pointer-events: none;
+}
+.select {
+  position: relative;
+  margin-bottom: 2px;
+}
+.select select {
+  background: #9d0000;
+  border: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: $white;
+  font-weight: 400;
+  font-family: "Poppins";
+  padding: 13px 100px 13px 6px;
+}
+.select select:focus {
+  outline: 0;
+}
+.services-item-location {
+  background-color: $red;
+}
+.services-item-location .h4 {
+  color: $white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 80px;
+  font-family: "Poppins";
+}
+
 
 
 @import "media";

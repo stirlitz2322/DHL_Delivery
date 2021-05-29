@@ -9,6 +9,16 @@
 	.section-services h2 {
 		padding: 50px 0;
 	}
+	.services-item-location {
+		padding-left: 11px;
+	}
+	.yellow-line-center {
+		margin: 30px 0;
+	  }
+	.select {
+		padding-bottom: 30px;
+		padding-top: 48px;
+	  }
 
 }
 
@@ -57,6 +67,13 @@
 	  }
 	  .section-more-text {
 		display: grid;
+	}
+	.select {
+		padding-bottom: 20px;
+		padding-top: 0;
+	  }
+	  .section-more {
+		margin-top: 15px;
 	}
 }
 
@@ -137,8 +154,23 @@
 		font-size: 20px;
 		margin-right: 5px;
 	  }
+
 }
 	/**/
+
+
+/* bottom-case */
+@media only screen and (max-width : 553px){
+	.select {
+		padding-bottom: 42px;
+		padding-top: 35px;
+	  }
+	  .yellow-button-two {
+		margin-bottom: 7px;
+	}
+
+}
+
 
 
 /* Extra Small Devices, Phones */

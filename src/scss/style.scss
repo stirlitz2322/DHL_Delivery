@@ -257,6 +257,20 @@ ul {
   font-size: 12px;
   z-index: 1;
 }
+.yellow-button-two {
+  color: $red;
+  font-weight: bold;
+  font-family: Poppins;
+  border-radius: 25px;
+  background-color: $yellow;
+  padding: 15.5px 39px;
+  filter: drop-shadow(0px 10px 9px rgba(255,204,0,0.4));
+  text-align: center;
+  font-size: 12px;
+  background-color: $yellow;
+  width: 150px;
+  height: 50px;
+}
 .yellow-point {
   color: $yellow;
   font-size: 30px;
@@ -344,7 +358,7 @@ ul {
   width: 70px;
   height: 2px;
   background: $yellow;
-  margin: 30px 0;
+  margin: 30px 0 0 0;
 }
 
 
@@ -352,6 +366,7 @@ ul {
   display: grid;
   height: 100%;
   width: 100%;
+  margin-top: 105px;
   position: relative;
   background-size: cover;
   background-position: center center;
@@ -461,19 +476,20 @@ ul {
   margin-right: 5px;
 }
 .select::after {
-  padding: 13px;
+  padding: 13px 16px;
   background-color: $yellow;
   content: "\f078";
-  // display: block;
   font-family: Fontawesome;
   color: $red;
   position: absolute;
-  margin-left: -42px;
+  margin-left: -48px;
   pointer-events: none;
 }
 .select {
   position: relative;
-  margin-bottom: 2px;
+  padding-bottom: 20px;
+  padding-top: 38px;
+
 }
 .select select {
   background: #9d0000;
@@ -486,12 +502,48 @@ ul {
   font-weight: 400;
   font-family: "Poppins";
   padding: 13px 100px 13px 6px;
+
 }
 .select select:focus {
   outline: 0;
 }
+.section-select .select::after {
+  content: "\f078";
+  background-color: $red;
+  font-family: Fontawesome;
+  color: $white;
+  position: absolute;
+  margin-left: -53px;
+  pointer-events: none;
+  margin-top: 2px;
+  border-left: 2px solid $white;
+}
+.section-select .select {
+  position: relative;
+  // padding-bottom: 20px;
+  // padding-top: 38px;
+
+}
+.section-select .select select {
+  background: $red;
+  border: 2px solid $white;
+  -webkit-appearance: none;
+  appearance: none;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: $white;
+  font-weight: 400;
+  font-family: "Poppins";
+  // padding: 13px 100px 13px 6px;
+  width: 100%;
+
+}
 .services-item-location {
   background-color: $red;
+  padding-left: 30px;
+}
+.services-item-location p {
+  color: $white;
 }
 .services-item-location .h4 {
   color: $white;
@@ -499,8 +551,46 @@ ul {
   letter-spacing: 1px;
   line-height: 80px;
   font-family: "Poppins";
+  font-weight: 600;
+  padding-top: 32px;
+  margin-bottom: 0;
 }
+.services-item-location a {
+  text-decoration: none;
+}
+.section-select .container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+//tabs
+.wrapper {
+  width: 570px;
+  margin: 0 auto;
+}
+.tabs-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.tabs-nav__item {
+  padding: 20px;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+  flex: 1;
+}
+.tabs-nav__item.is-active {
+  border-color: rgb(53, 128, 34);
 
-
+}
+.tab {
+  display: none;
+  padding: 20px;
+  // background-color: #f2f2f2;
+}
+.tab.is-active {
+  display: block;
+}
+.tabs__content {
+  background-color: $red;
+}
 
 @import "media";

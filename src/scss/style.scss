@@ -577,7 +577,7 @@ ul {
 //tabs
 .wrapper {
   width: 480px;
-  margin: 0 auto;
+  margin-right: 15px;
 }
 .tabs-nav {
   display: flex;
@@ -627,7 +627,7 @@ ul {
   height: 410px;
   background-color: rgba(186,0,0,0);
   border: 20px solid #ffcc00;
-  margin: 0 auto;
+  // margin: 0 auto;
 }
 .photo-item {
   width: 431px;
@@ -655,5 +655,46 @@ ul {
   bottom: 0;
   background-repeat: no-repeat;
   z-index: 1;
+}
+
+.section-about {
+  background-color: $red;
+  height: 350px;
+}
+.section-about .h2{
+  font-size: 30px;
+  font-family: Poppins;
+  letter-spacing: 1px;
+  line-height: 24px;
+  color: $white;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.section-about p {
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  color: $white;
+  font-weight: 400;
+  font-family: "Poppins";
+}
+.section-about a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  justify-content: right;
+}
+.gray-button {
+
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  filter: drop-shadow(0px 10px 9px rgba(255,204,0,0.4));
+  background-color: #a00000;
+  margin-top: 125px;
+
 }
 @import "media";

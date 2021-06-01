@@ -75,6 +75,19 @@
 	  .section-more {
 		margin-top: 15px;
 	}
+	.wrapper {
+		width: 360px;
+	  }
+	.bayern-photo {
+		width: 300px;
+		height: 410px;
+		background-color: rgba(186,0,0,0);
+		border: 20px solid #ffcc00;
+		margin: 0 auto;
+	  }
+	  .photo-item {
+		width: 300px;
+	  }
 }
 
 
@@ -154,7 +167,29 @@
 		font-size: 20px;
 		margin-right: 5px;
 	  }
+	  .section-select .container{
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
 
+	  }
+	  .wrapper {
+		width: 445px;
+	  }
+
+	.bayern-photo {
+		width: 420px;
+		height: 410px;
+		background-color: rgba(186,0,0,0);
+		border: 20px solid #ffcc00;
+		margin: 0 auto;
+	  }
+	  .photo-item {
+		width: 420px;
+		margin: 10px 0 0 10px;
+	  }
+	  .section-select {
+		margin-top: 50px;
+	  }
 }
 	/**/
 
@@ -249,6 +284,19 @@
 		height: 180px;
 		width: 100%;
 	}
+	.wrapper {
+		width: 445px;
+	}
+	.bayern-photo {
+		width: 360px;
+		height: 422px;
+		background-color: rgba(186,0,0,0);
+		border: 6px solid #ffcc00;
+	  }
+	.photo-item {
+		width: 348px;
+		margin: 0;
+	  }
 }	
 	/**/
 

@@ -426,8 +426,6 @@ ul {
   display: grid;
   grid-gap: $gutter;
   grid-template-columns: repeat(3, 1fr);
-  // margin-bottom: 0;
-  // margin-top: 7.5%;
 
 
 }
@@ -505,7 +503,12 @@ ul {
 
 }
 .select select:focus {
+  outline: none;
+}
+.section-select .select select:focus {
   outline: 0;
+  color: $yellow;
+  font-weight: 800;
 }
 .section-select .select::after {
   content: "\f078";
@@ -520,8 +523,8 @@ ul {
 }
 .section-select .select {
   position: relative;
-  // padding-bottom: 20px;
-  // padding-top: 38px;
+  padding: 10px 0;
+
 
 }
 .section-select .select select {
@@ -534,7 +537,7 @@ ul {
   color: $white;
   font-weight: 400;
   font-family: "Poppins";
-  // padding: 13px 100px 13px 6px;
+  text-transform: uppercase;
   width: 100%;
 
 }
@@ -555,16 +558,25 @@ ul {
   padding-top: 32px;
   margin-bottom: 0;
 }
-.services-item-location a {
+.services-item-location a, .section-select a {
   text-decoration: none;
+}
+.section-select {
+  margin-top: 100px;
 }
 .section-select .container{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 0;
 }
+.section-select .yellow-button {
+  margin: 0;
+  filter: drop-shadow(0 10px 9px rgba(255,204,0,.4));
+}
+
 //tabs
 .wrapper {
-  width: 570px;
+  width: 480px;
   margin: 0 auto;
 }
 .tabs-nav {
@@ -573,24 +585,75 @@ ul {
 }
 .tabs-nav__item {
   padding: 20px;
-  border-bottom: 1px solid transparent;
   cursor: pointer;
   flex: 1;
+  background-color: $yellow;
+  filter: drop-shadow(0px 10px 9px rgba(255,204,0,0.4));
+  color: $red;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  font-family: Poppins;
+  font-weight: 800;
+  text-align: center;
 }
 .tabs-nav__item.is-active {
-  border-color: rgb(53, 128, 34);
+  background-color: $red;
+  color: $white;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  font-family: Poppins;
+  font-weight: 800;
+  text-align: center;
+  
+
 
 }
 .tab {
   display: none;
   padding: 20px;
-  // background-color: #f2f2f2;
 }
 .tab.is-active {
   display: block;
 }
 .tabs__content {
   background-color: $red;
+  margin-bottom: 15px;
 }
 
+.bayern-photo {
+  width: 431px;
+  height: 410px;
+  background-color: rgba(186,0,0,0);
+  border: 20px solid #ffcc00;
+  margin: 0 auto;
+}
+.photo-item {
+  width: 431px;
+  height: 410px;
+  margin: 20px 0 0 20px;
+  position: relative;
+}
+
+.photo-item:after {
+	content: "";
+	display: block;    
+	width: 100%;
+	height: 100%;    
+	top: 0;      
+	left: 0;   
+	background: transparent;
+  background-image: linear-gradient(0deg, #ffcb00 0%, rgba(255,255,255,0) 100%);
+	opacity: 0.8;
+}
+.dhl-logo2 {
+  height: 50px;
+  width: 156px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
 @import "media";

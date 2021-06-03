@@ -83,11 +83,14 @@
 		height: 410px;
 		background-color: rgba(186,0,0,0);
 		border: 20px solid #ffcc00;
-		// margin: 0 auto;
+		margin: 0 auto;
 	  }
 	  .photo-item {
 		width: 300px;
 	  }
+	.section-about .h2 {
+		margin-top: 45px;
+	}
 }
 
 
@@ -171,9 +174,14 @@
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr;
 
+
 	  }
 	  .wrapper {
 		width: 445px;
+		margin: 0 auto;
+	  }
+	  .wrapper .tabs {
+		  width: 473px;
 	  }
 
 	.bayern-photo {
@@ -188,6 +196,15 @@
 	  }
 	  .section-select {
 		margin-top: 50px;
+	  }
+	  .section-about .h2 {
+		  margin: 30px 0 15px 0;
+	  }
+	  .section-about p {
+		  font-size: 14px;
+	  }
+	  .gray-button {
+		  margin-top: 0;
 	  }
 }
 	/**/
@@ -284,19 +301,30 @@
 		width: 100%;
 	}
 	.wrapper {
-		width: 445px;
+		width: 320px;
 	}
 	.bayern-photo {
-		width: 360px;
+		width: 320px;
 		height: 422px;
 		background-color: rgba(186,0,0,0);
 		border: 6px solid #ffcc00;
 	  }
 	.photo-item {
-		width: 348px;
+		width: 310px;
 		margin: 0;
 	  }
+	.wrapper .tabs {
+		width: 320px;
+	}
 }	
+	/**/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 436px){
+	.section-about {
+		height: 405px;
+	}
+}
 	/**/
 
 

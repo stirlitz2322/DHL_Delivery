@@ -728,11 +728,30 @@ ul {
   height: 100%;
   grid-gap: $gutter;
   background-repeat: no-repeat;
-  // justify-content: center;
   align-items: center;
   background-size: contain;
   background-position: center center;
 
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 300px;
+  width: 100%;
+  background-color: $red;
+  align-items:center;
+}
+footer ul {
+  display: grid;
+  justify-content: center;
+  // padding-top: 40px;
+}
+.footer-img-1 {
+  display: grid;
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
 }
 
 @import "media";

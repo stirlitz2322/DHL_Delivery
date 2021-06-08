@@ -572,6 +572,7 @@ ul {
 .section-select .yellow-button {
   margin: 0;
   filter: drop-shadow(0 10px 9px rgba(255,204,0,.4));
+  text-transform: uppercase;
 }
 
 //tabs
@@ -696,6 +697,41 @@ ul {
   margin-top: 125px;
   padding-top: 13px;
   padding-left: 24px;
+
+}
+.section-partner {
+  width: 100%;
+  height: 258px;
+  padding-top: 70px;
+}
+.partner-item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+}
+.div-partner {
+  width: 270px;
+  height: 129px;
+  background-color: #f4f4f4;
+  padding-left: 20px;
+  padding-right: 15px;
+  border: 2px solid rgba(186,0,0,0.1);
+  cursor: pointer;
+
+}
+.div-partner:hover  {
+  border: 2px solid #ba0000;
+}
+.photo-partner-item {
+  display: grid;
+  width: auto;
+  height: 100%;
+  grid-gap: $gutter;
+  background-repeat: no-repeat;
+  // justify-content: center;
+  align-items: center;
+  background-size: contain;
+  background-position: center center;
 
 }
 

@@ -739,19 +739,72 @@ footer {
   grid-template-columns: repeat(5, 1fr);
   height: 300px;
   width: 100%;
-  background-color: $red;
   align-items:center;
 }
 footer ul {
   display: grid;
   justify-content: center;
-  // padding-top: 40px;
 }
 .footer-img-1 {
   display: grid;
   height: 300px;
   width: 100%;
   background-repeat: no-repeat;
+}
+.footer-img-2 {
+  display: grid;
+  height: 300px;
+  width: 100%;
+  margin-left: 40px;
+  background-repeat: no-repeat;
+}
+.footer-img-1::before {
+  content: "";
+  height: 300px;
+  width: 40px;
+  background-color: $red;
+}
+.footer-img-2::after {
+  content: "";
+  height: 300px;
+  width: 40px;
+  background-color: $yellow;
+  
+}
+footer .h3 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  color: #ba0000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+footer li {
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  color: #a3a2a2;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+footer .list-item::before {
+  content: "\f0da";
+  color: #ba0000;
+  font-family: "Fontawesome";
+  margin-right: 5px;
+}
+.list-item a {
+  text-decoration: none;
+  color: #a3a2a2;
+}
+.list-item a:hover {
+  color: $yellow;
+}
+.social a:hover {
+  color: rgb(0, 121, 202);
 }
 
 @import "media";

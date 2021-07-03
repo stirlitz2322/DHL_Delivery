@@ -744,12 +744,15 @@ footer {
 footer ul {
   display: grid;
   justify-content: center;
+  height: 235px;
 }
 .footer-img-1 {
   display: grid;
   height: 300px;
   width: 100%;
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
 .footer-img-2 {
   display: grid;
@@ -757,20 +760,10 @@ footer ul {
   width: 100%;
   margin-left: 40px;
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
-.footer-img-1::before {
-  content: "";
-  height: 300px;
-  width: 40px;
-  background-color: $red;
-}
-.footer-img-2::after {
-  content: "";
-  height: 300px;
-  width: 40px;
-  background-color: $yellow;
-  
-}
+
 footer .h3 {
   font-size: 20px;
   letter-spacing: 1px;
